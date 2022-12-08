@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Mono";
+  src: url("assets/MonospaceTypewriter.woff2") format("woff2"),
+    url("assets/MonospaceTypewriter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Mono";
+  font-weight: 100;
+  font-size: 90%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#txt,
+#txt2 {
+  position: absolute;
+  color: black;
+  top: -100px;
+  left: -100px;
+  padding: 0px 2px;
+  border: 2px solid black;
+}
+
+#griddies {
+  cursor: pointer;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  gap: 0.6px 0px;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: black;
+}
+.ding {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  background-color: white;
+}
